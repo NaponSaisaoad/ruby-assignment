@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_03_05_173827) do
+ActiveRecord::Schema[7.2].define(version: 2026_03_05_180136) do
+  create_table "attendances", force: :cascade do |t|
+    t.integer "employee_id", null: false
+    t.datetime "check_in"
+    t.datetime "check_out"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["employee_id"], name: "index_attendances_on_employee_id"
+  end
+
   create_table "employees", force: :cascade do |t|
     t.text "name"
     t.text "last_name"
@@ -19,4 +28,6 @@ ActiveRecord::Schema[7.2].define(version: 2026_03_05_173827) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "attendances", "employees"
 end
