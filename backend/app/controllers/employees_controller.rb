@@ -12,7 +12,8 @@ class EmployeesController < ApplicationController
 
     render json: {
       id: employee.id,
-      full_name: employee.full_name,
+      name: employee.name,
+      last_name: employee.last_name,
       position: employee.position,
       salary: employee.salary,
       attendances: employee.attendances,
