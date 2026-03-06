@@ -1,3 +1,6 @@
 import api from "../api";
 
-export const search = () => api.get("/employees");
+export const search = (keyword?: string) =>
+  api.get("/employees", {
+    params: { keyword },
+  });

@@ -1,4 +1,4 @@
-import { Button, Layout, Popconfirm, Space, Table } from "antd";
+import { Button, Layout, Popconfirm, Space, Table, Input } from "antd";
 import { useEffect, useState } from "react";
 import { search } from "../../api/employees/search";
 import { Content } from "antd/es/layout/layout";
@@ -14,11 +14,22 @@ interface Employee {
 
 export default function Search() {
   const [employees, setEmployees] = useState<Employee[]>([]);
+  const [keyword, setKeyword] = useState("");
 
   useEffect(() => {
     search().then((res) => {
       setEmployees(res.data);
     });
+  }, []);
+
+  const fetchEmployees = (kw?: string) => {
+    search(kw).then((res) => {
+      setEmployees(res.data);
+    });
+  };
+
+  useEffect(() => {
+    fetchEmployees();
   }, []);
 
   const onDelete = (id: number) => {
@@ -68,6 +79,15 @@ export default function Search() {
       <Layout style={{ minHeight: "100vh", background: "#f5f7fa" }}>
         <Content style={{ padding: "40px 80px" }}>
           <Title level={2}>Employee</Title>
+          <Input.Search
+            placeholder="Search by name"
+            style={{ width: 300, marginBottom: 16 }}
+            onSearch={(value) => {
+              setKeyword(value);
+              fetchEmployees(value);
+            }}
+            allowClear
+          />
           <Table rowKey="id" dataSource={employees} columns={columns} />
           <Button type="primary" href="/create">
             Add Employee
