@@ -2,7 +2,8 @@ import type { Attendance, Payroll } from "./attendance";
 
 export interface Employee {
   id: number;
-  full_name: string;
+  name: string;
+  last_name: string;
   position: string;
   salary: number;
   attendances?: Attendance[];

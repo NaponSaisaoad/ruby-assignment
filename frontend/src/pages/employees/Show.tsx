@@ -6,15 +6,28 @@ import { create } from "../../api/attendances/create";
 import { update } from "../../api/attendances/update";
 import type { Employee } from "../../types/employee";
 import type { Attendance } from "../../types/attendance";
+import { message } from "antd";
 
 export default function Show() {
   const { id } = useParams();
   const [employee, setEmployee] = useState<Employee | null>(null);
 
+  const formatAttendances = (attendances: Attendance[]) =>
+    attendances.map((attendance) => ({
+      ...attendance,
+      check_in: new Date(attendance.check_in).toLocaleString(),
+      check_out: attendance.check_out
+        ? new Date(attendance.check_out).toLocaleString()
+        : null,
+    }));
+
   const reloadEmployee = async () => {
     try {
       const res = await getById(Number(id));
-      setEmployee(res.data);
+      setEmployee({
+        ...res.data,
+        attendances: formatAttendances(res.data.attendances),
+      });
     } catch (error) {
       console.error(error);
     }
@@ -24,7 +37,10 @@ export default function Show() {
     const fetchEmployee = async () => {
       try {
         const res = await getById(Number(id));
-        setEmployee(res.data);
+        setEmployee({
+          ...res.data,
+          attendances: formatAttendances(res.data.attendances),
+        });
       } catch (error) {
         console.error(error);
       }
@@ -53,11 +69,18 @@ export default function Show() {
             <Button
               size="small"
               onClick={async () => {
-                await update(record.id, {
-                  check_out: new Date().toISOString(),
-                });
+                try {
+                  await update(record.id, {
+                    check_out: new Date().toISOString(),
+                  });
 
-                reloadEmployee();
+                  message.success("Check-out success");
+                  reloadEmployee();
+                } catch (error: any) {
+                  message.error(
+                    error?.response?.data?.check_out?.[0] || "Check-out failed",
+                  );
+                }
               }}
             >
               Check Out
@@ -72,7 +95,7 @@ export default function Show() {
     <Card title="Employee Detail">
       <Descriptions column={1}>
         <Descriptions.Item label="Name">
-          {employee.full_name}
+          {employee.name} {employee.last_name}
         </Descriptions.Item>
 
         <Descriptions.Item label="Position">
@@ -97,12 +120,21 @@ export default function Show() {
           <Button
             type="primary"
             onClick={async () => {
-              await create({
-                employee_id: employee.id,
-                check_in: new Date().toISOString(),
-              });
+              try {
+                await create({
+                  employee_id: employee.id,
+                  check_in: new Date().toISOString(),
+                });
 
-              reloadEmployee();
+                message.success("Check-in success");
+                reloadEmployee();
+              } catch (error: any) {
+                message.error(
+                  error?.response?.data?.check_in?.[0] ||
+                    error?.response?.data?.employee?.[0] ||
+                    "Check-in failed",
+                );
+              }
             }}
           >
             Check In
@@ -115,6 +147,9 @@ export default function Show() {
           columns={columns}
           pagination={false}
         />
+        <Button type="primary" href="/" style={{ marginTop: 16 }}>
+          Back
+        </Button>
       </Card>
     </Card>
   );
