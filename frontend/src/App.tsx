@@ -1,16 +1,18 @@
-import { useEffect } from 'react'
+import Layout, { Content } from 'antd/es/layout/layout';
 import './App.css'
-import { getEmployees } from './api/empolyee/getEmployees';
+import Employee from './pages/Employee';
+import Title from 'antd/es/typography/Title';
 
 function App() {
-
-  useEffect(() => {
-    getEmployees().then(res => {
-      console.log(res.data);
-    });
-  }, []);
-
-  return <h1>Payroll App</h1>;
+  return (
+    <Layout style={{ minHeight: "100vh", background: "#f5f7fa" }}>
+      <Content style={{ padding: "40px 80px" }}>
+        <Title level={2}>Employee List</Title>
+        <Employee />
+      </Content>
+    </Layout>
+  );
 }
+
 
 export default App
