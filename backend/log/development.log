@@ -54,3 +54,442 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
 
 
+Started GET "/employees" for ::1 at 2026-03-06 19:07:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:07:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:08:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:08:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/" for 127.0.0.1 at 2026-03-06 19:08:36 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/naponsaisaoad/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/naponsaisaoad/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-03-06 19:09:27 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/naponsaisaoad/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/naponsaisaoad/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/employees" for ::1 at 2026-03-06 19:12:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:12:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:12:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:12:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:14:24 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for EmployeesController):
+  
+actionpack (7.2.3) lib/abstract_controller/base.rb:147:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/employees" for ::1 at 2026-03-06 19:14:24 +0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for EmployeesController):
+  
+actionpack (7.2.3) lib/abstract_controller/base.rb:147:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/employees" for ::1 at 2026-03-06 19:14:36 +0700
+Started GET "/OidcServiceWorker.js.map" for ::1 at 2026-03-06 19:14:36 +0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for EmployeesController):
+  
+actionpack (7.2.3) lib/abstract_controller/base.rb:147:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js.map"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2026-03-06 19:14:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/OidcServiceWorker.js.map" for ::1 at 2026-03-06 19:14:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js.map"):
+  
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:14:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2026-03-06 19:19:23 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/OidcServiceWorker.js.map" for ::1 at 2026-03-06 19:19:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js.map"):
+  
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:19:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:19:26 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:19:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:19:31 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:19:31 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:19:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:19:59 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:20:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:20:12 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:20:12 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:20:15 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:20:15 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:20:16 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/OidcServiceWorker.js?v=7.26.3" for ::1 at 2026-03-06 19:20:18 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/OidcServiceWorker.js"):
+  
+Started GET "/employees" for ::1 at 2026-03-06 19:20:59 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:20:59 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:23:25 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:23:25 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:47 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:48 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:48 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:48 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:49 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:49 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:49 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:49 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:50 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 19:29:50 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
