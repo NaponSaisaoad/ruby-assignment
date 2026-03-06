@@ -14,7 +14,6 @@ interface Employee {
 
 export default function Search() {
   const [employees, setEmployees] = useState<Employee[]>([]);
-  const [keyword, setKeyword] = useState("");
 
   useEffect(() => {
     search().then((res) => {
@@ -83,7 +82,6 @@ export default function Search() {
             placeholder="Search by name"
             style={{ width: 300, marginBottom: 16 }}
             onSearch={(value) => {
-              setKeyword(value);
               fetchEmployees(value);
             }}
             allowClear
