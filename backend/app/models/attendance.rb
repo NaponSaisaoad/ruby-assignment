@@ -19,4 +19,10 @@
 #
 class Attendance < ApplicationRecord
   belongs_to :employee
+
+  validates :check_in, presence: true
+  validates :check_out, presence: true
+
+  validate :check_out_after_check_in
+  validate :one_attendance_per_day
 end

@@ -11,8 +11,14 @@
 #  updated_at :datetime         not null
 #
 class Employee < ApplicationRecord
-    validates :name, presence: true
-    validates :last_name, presence: true
-    validates :position, presence: true
-    validates :salary, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  has_many :attendances, dependent: :destroy
+
+  validates :name, presence: true
+  validates :last_name, presence: true
+  validates :position, presence: true
+  validates :salary, presence: true, numericality: { greater_than_or_equal_to: 0 }
+
+  def full_name
+    "#{name} #{last_name}"
+  end
 end
