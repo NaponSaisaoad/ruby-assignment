@@ -1615,3 +1615,171 @@ HTTP Origin header (http://localhost:5174) didn't match request.base_url (http:/
 Completed 204 No Content in 13ms (ActiveRecord: 2.5ms (3 queries, 0 cached) | GC: 0.9ms)
 
 
+Started GET "/employees/5" for ::1 at 2026-03-06 23:55:04 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:55:04 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 23:56:35 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (20.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: -1.5ms | ActiveRecord: 41.9ms (1 query, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 23:56:35 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (2.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees/1" for ::1 at 2026-03-06 23:56:37 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/1" for ::1 at 2026-03-06 23:56:37 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees/1" for ::1 at 2026-03-06 23:57:20 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.6ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 1]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 11.7ms (2 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/employees/1" for ::1 at 2026-03-06 23:57:20 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 1]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 2.0ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started PUT "/employees/1" for ::1 at 2026-03-06 23:57:23 +0700
+Processing by EmployeesController#update as HTML
+  Parameters: {"employee"=>{"name"=>"Napon", "last_name"=>"Saisaoad", "position"=>"Developer", "salary"=>"2001.0"}, "id"=>"1"}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 23:57:23 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 23:57:23 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:24 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (3.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (4.4ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 7.8ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:24 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:27 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:27 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.5ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:32 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.8ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:57:32 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.2ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:58:35 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees/5" for ::1 at 2026-03-06 23:58:35 +0700
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:40:in `set_employee'
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 5]]
+  ↳ app/controllers/employees_controller.rb:11:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6914219517647151780)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6914219517647151780)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
