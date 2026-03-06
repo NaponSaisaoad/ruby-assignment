@@ -1,14 +1,16 @@
 import "./App.css";
-import Employee from "./pages/Employee";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CreateEmployee from "./pages/CreateEmployee";
+import Create from "./pages/employees/Create";
+import Search from "./pages/employees/Search";
+import Update from "./pages/employees/Update";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Employee />} />
-        <Route path="/create" element={<CreateEmployee />} />
+        <Route path="/" element={<Search />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/employees/:id" element={<Update />} />
       </Routes>
     </BrowserRouter>
   );

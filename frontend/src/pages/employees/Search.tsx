@@ -1,6 +1,6 @@
 import { Button, Layout, Table } from "antd";
 import { useEffect, useState } from "react";
-import { get } from "../api/employee/get";
+import { search } from "../../api/employees/search";
 import { Content } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
 interface Employee {
@@ -11,11 +11,11 @@ interface Employee {
   salary: string;
 }
 
-export default function Employee() {
+export default function Search() {
   const [employees, setEmployees] = useState<Employee[]>([]);
 
   useEffect(() => {
-    get().then((res) => {
+    search().then((res) => {
       setEmployees(res.data);
     });
   }, []);
@@ -33,13 +33,19 @@ export default function Employee() {
       title: "Salary",
       dataIndex: "salary",
     },
+    {
+      title: "Action",
+      render: (_: unknown, record: Employee) => (
+        <a href={`/employees/${record.id}`}>Edit</a>
+      ),
+    },
   ];
 
   return (
     <>
       <Layout style={{ minHeight: "100vh", background: "#f5f7fa" }}>
         <Content style={{ padding: "40px 80px" }}>
-          <Title level={2}>Employee List</Title>
+          <Title level={2}>Employee</Title>
           <Table rowKey="id" dataSource={employees} columns={columns} />
           <Button type="primary" href="/create">
             Add Employee

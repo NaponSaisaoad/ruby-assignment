@@ -1,9 +1,9 @@
 import { Card, Form, Input, InputNumber, Button } from "antd";
-import { create } from "../api/employee/create";
+import { create } from "../../api/employees/create";
 import { useNavigate } from "react-router-dom";
-import type { CreateEmployee as CreateEmployeeForm } from "../types/employee";
+import type { CreateEmployee as CreateEmployeeForm } from "../../types/employee";
 
-export default function CreateEmployee() {
+export default function Create() {
   const navigate = useNavigate();
 
   const onFinish = (values: CreateEmployeeForm) => {
