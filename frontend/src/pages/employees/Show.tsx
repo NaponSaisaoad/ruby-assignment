@@ -42,6 +42,13 @@ export default function Show() {
         <p>Tax: -</p>
         <p>Net Pay: -</p>
       </Card>
+      <Card title="Attendance" style={{ marginTop: 20 }}>
+        {employee.attendances?.map((a) => (
+          <p key={a.id}>
+            Check In: {a.check_in} | Check Out: {a.check_out}
+          </p>
+        ))}
+      </Card>
     </Card>
   );
 }
