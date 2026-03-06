@@ -1,3 +1,22 @@
-
-# Ignore master key for decrypting credentials and more.
+# Ignore master key
 /config/master.key
+
+# macOS
+.DS_Store
+
+# Rails logs
+/log/*
+!/log/.keep
+
+# temp files
+/tmp/*
+!/tmp/.keep
+
+# cache
+/tmp/cache
+
+# node modules (ถ้ามี frontend)
+node_modules
+
+# environment variables
+.env
