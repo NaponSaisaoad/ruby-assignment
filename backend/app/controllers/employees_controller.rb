@@ -8,7 +8,22 @@ class EmployeesController < ApplicationController
   end
 
   def show
-    render json: @employee.as_json(include: :attendances)
+    employee = Employee.includes(:attendances).find(params[:id])
+
+    render json: {
+      id: employee.id,
+      full_name: employee.full_name,
+      position: employee.position,
+      salary: employee.salary,
+      attendances: employee.attendances,
+      payroll: {
+        working_days: employee.working_days,
+        ot_hours: employee.ot_hours,
+        ot_pay: employee.ot_pay,
+        tax: employee.tax,
+        net_pay: employee.net_pay
+      }
+  }
   end
 
   def create

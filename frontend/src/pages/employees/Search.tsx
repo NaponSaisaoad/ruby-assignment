@@ -44,10 +44,12 @@ export default function Search() {
       title: "Action",
       render: (_: unknown, record: Employee) => (
         <Space>
+          <Button type="link" href={`/employees/detail/${record.id}`}>
+            View
+          </Button>
           <Button type="link" href={`/employees/${record.id}`}>
             Edit
           </Button>
-
           <Popconfirm
             title="Delete employee?"
             onConfirm={() => onDelete(record.id)}

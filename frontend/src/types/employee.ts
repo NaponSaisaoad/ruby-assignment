@@ -1,3 +1,9 @@
+export interface Employee {
+  id: number;
+  name: string;
+  salary: number;
+  position: string;
+}
 export interface CreateEmployee {
   name: string;
   last_name: string;
