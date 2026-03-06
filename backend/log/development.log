@@ -722,3 +722,535 @@ Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms (1 query, 0 cached) 
   [1m[36mAttendance Create (1.8ms)[0m  [1m[32mINSERT INTO "attendances" ("employee_id", "check_in", "check_out", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["employee_id", 1], ["check_in", "2026-03-06 13:57:46.460612"], ["check_out", "2026-03-06 23:57:46.460614"], ["created_at", "2026-03-06 13:57:46.484882"], ["updated_at", "2026-03-06 13:57:46.484882"]]
   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mAttendance Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "attendances" WHERE "attendances"."employee_id" = $1[0m  [["employee_id", 1]]
+Started GET "/employees" for ::1 at 2026-03-06 21:58:22 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (25.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: -9.1ms | ActiveRecord: 37.5ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 21:58:23 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:01:22 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:01:22 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:01:46 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:01:46 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:02:05 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:02:05 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:02:53 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:02:53 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:03:48 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (1.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:03:48 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/employees" for ::1 at 2026-03-06 22:04:02 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"1", "last_name"=>"2", "position"=>"Dev", "salary"=>232232}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)):
+  
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:314:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:408:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:397:in `verify_authenticity_token'
+activesupport (7.2.3) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.3) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.3) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `block in invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `each'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.3) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.3) lib/abstract_controller/base.rb:152:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:44:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/employees" for ::1 at 2026-03-06 22:04:23 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:04:23 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/employees" for ::1 at 2026-03-06 22:04:34 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"123", "last_name"=>"123", "position"=>"213", "salary"=>213}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+Completed 422 Unprocessable Content in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)):
+  
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:314:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:408:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:397:in `verify_authenticity_token'
+activesupport (7.2.3) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.3) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.3) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `block in invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `each'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.3) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.3) lib/abstract_controller/base.rb:152:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:44:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started POST "/employees" for ::1 at 2026-03-06 22:06:01 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"123", "last_name"=>"123", "position"=>"213", "salary"=>213}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+Completed 422 Unprocessable Content in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)):
+  
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:314:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:408:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:397:in `verify_authenticity_token'
+activesupport (7.2.3) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.3) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.3) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `block in invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `each'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.3) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.3) lib/abstract_controller/base.rb:152:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:44:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started POST "/employees" for ::1 at 2026-03-06 22:07:59 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"123", "last_name"=>"123", "position"=>"213", "salary"=>213}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)):
+  
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:314:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:408:in `handle_unverified_request'
+actionpack (7.2.3) lib/action_controller/metal/request_forgery_protection.rb:397:in `verify_authenticity_token'
+activesupport (7.2.3) lib/active_support/callbacks.rb:362:in `block in make_lambda'
+activesupport (7.2.3) lib/active_support/callbacks.rb:179:in `block in call'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.2.3) lib/active_support/callbacks.rb:180:in `call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `block in invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `each'
+activesupport (7.2.3) lib/active_support/callbacks.rb:560:in `invoke_before'
+activesupport (7.2.3) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.2.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.3) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.3) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.3) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.3) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.3) lib/abstract_controller/base.rb:152:in `process'
+actionview (7.2.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.3) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.3) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.3) lib/action_dispatch/routing/route_set.rb:896:in `call'
+rack (3.2.5) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.5) lib/rack/etag.rb:29:in `call'
+rack (3.2.5) lib/rack/conditional_get.rb:44:in `call'
+rack (3.2.5) lib/rack/head.rb:15:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.3) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.3) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.3) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.3) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.3) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.2.5) lib/rack/method_override.rb:28:in `call'
+rack (3.2.5) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.5) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.2.3) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.2.3) lib/rails/engine.rb:535:in `call'
+puma (7.2.0) lib/puma/configuration.rb:296:in `call'
+puma (7.2.0) lib/puma/request.rb:103:in `block in handle_request'
+puma (7.2.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.2.0) lib/puma/request.rb:102:in `handle_request'
+puma (7.2.0) lib/puma/server.rb:503:in `process_client'
+puma (7.2.0) lib/puma/server.rb:262:in `block in run'
+puma (7.2.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started POST "/employees" for ::1 at 2026-03-06 22:10:12 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"1", "last_name"=>"2", "position"=>"3", "salary"=>4}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mEmployee Create (2.1ms)[0m  [1m[32mINSERT INTO "employees" ("name", "last_name", "position", "salary", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "1"], ["last_name", "2"], ["position", "3"], ["salary", "4.0"], ["created_at", "2026-03-06 15:10:12.273244"], ["updated_at", "2026-03-06 15:10:12.273244"]]
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+Completed 200 OK in 42ms (Views: 0.3ms | ActiveRecord: 23.7ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:12 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (1.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:12 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/employees" for ::1 at 2026-03-06 22:10:27 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"12", "last_name"=>"21`", "position"=>"Dev", "salary"=>123}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mEmployee Create (1.4ms)[0m  [1m[32mINSERT INTO "employees" ("name", "last_name", "position", "salary", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "12"], ["last_name", "21`"], ["position", "Dev"], ["salary", "123.0"], ["created_at", "2026-03-06 15:10:27.858385"], ["updated_at", "2026-03-06 15:10:27.858385"]]
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:27 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:27 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/employees" for ::1 at 2026-03-06 22:10:37 +0700
+Processing by EmployeesController#create as HTML
+  Parameters: {"employee"=>{"name"=>"A", "last_name"=>"B", "position"=>"Dev", "salary"=>12312}}
+HTTP Origin header (http://localhost:5174) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mEmployee Create (1.5ms)[0m  [1m[32mINSERT INTO "employees" ("name", "last_name", "position", "salary", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "A"], ["last_name", "B"], ["position", "Dev"], ["salary", "12312.0"], ["created_at", "2026-03-06 15:10:37.775386"], ["updated_at", "2026-03-06 15:10:37.775386"]]
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:16:in `create'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:37 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/employees" for ::1 at 2026-03-06 22:10:37 +0700
+Processing by EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/controllers/employees_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.1ms)
+
+

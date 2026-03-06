@@ -1,4 +1,5 @@
 class EmployeesController < ApplicationController
+
   def index
     employees = Employee.all
     render json: employees
@@ -10,14 +11,23 @@ class EmployeesController < ApplicationController
   end
 
   def create
-    employee = Employee.create!(employee_params)
-    render json: employee
+    employee = Employee.new(employee_params)
+
+    if employee.save
+      render json: employee
+    else
+      render json: employee.errors, status: :unprocessable_entity
+    end
   end
 
   def update
     employee = Employee.find(params[:id])
-    employee.update!(employee_params)
-    render json: employee
+
+    if employee.update(employee_params)
+      render json: employee
+    else
+      render json: employee.errors, status: :unprocessable_entity
+    end
   end
 
   private
