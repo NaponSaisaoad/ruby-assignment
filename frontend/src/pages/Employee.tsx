@@ -1,7 +1,8 @@
-import { Table } from "antd";
+import { Button, Layout, Table } from "antd";
 import { useEffect, useState } from "react";
-import { getEmployees } from "../api/empolyee/getEmployees";
-
+import { get } from "../api/employee/get";
+import { Content } from "antd/es/layout/layout";
+import Title from "antd/es/typography/Title";
 interface Employee {
   id: number;
   name: string;
@@ -14,7 +15,7 @@ export default function Employee() {
   const [employees, setEmployees] = useState<Employee[]>([]);
 
   useEffect(() => {
-    getEmployees().then((res) => {
+    get().then((res) => {
       setEmployees(res.data);
     });
   }, []);
@@ -34,5 +35,17 @@ export default function Employee() {
     },
   ];
 
-  return <Table rowKey="id" dataSource={employees} columns={columns} />;
+  return (
+    <>
+      <Layout style={{ minHeight: "100vh", background: "#f5f7fa" }}>
+        <Content style={{ padding: "40px 80px" }}>
+          <Title level={2}>Employee List</Title>
+          <Table rowKey="id" dataSource={employees} columns={columns} />
+          <Button type="primary" href="/create">
+            Add Employee
+          </Button>
+        </Content>
+      </Layout>
+    </>
+  );
 }

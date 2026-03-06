@@ -1,18 +1,17 @@
-import Layout, { Content } from 'antd/es/layout/layout';
-import './App.css'
-import Employee from './pages/Employee';
-import Title from 'antd/es/typography/Title';
+import "./App.css";
+import Employee from "./pages/Employee";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CreateEmployee from "./pages/CreateEmployee";
 
 function App() {
   return (
-    <Layout style={{ minHeight: "100vh", background: "#f5f7fa" }}>
-      <Content style={{ padding: "40px 80px" }}>
-        <Title level={2}>Employee List</Title>
-        <Employee />
-      </Content>
-    </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Employee />} />
+        <Route path="/create" element={<CreateEmployee />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-
-export default App
+export default App;
