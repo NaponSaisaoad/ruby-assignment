@@ -3,7 +3,15 @@ class EmployeesController < ApplicationController
   before_action :set_employee, only: [:show, :update, :destroy]
 
   def index
+  if params[:keyword].present?
+    employees = Employee.where(
+      "name ILIKE :q OR last_name ILIKE :q",
+      q: "%#{params[:keyword]}%"
+    )
+  else
     employees = Employee.all
+  end
+
     render json: employees
   end
 
