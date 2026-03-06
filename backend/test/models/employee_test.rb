@@ -2,7 +2,7 @@
 #
 # Table name: employees
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  last_name  :text
 #  name       :text
 #  position   :text
