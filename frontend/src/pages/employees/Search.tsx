@@ -1,8 +1,9 @@
-import { Button, Layout, Table } from "antd";
+import { Button, Layout, Popconfirm, Space, Table } from "antd";
 import { useEffect, useState } from "react";
 import { search } from "../../api/employees/search";
 import { Content } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
+import { remove } from "../../api/employees/remove";
 interface Employee {
   id: number;
   name: string;
@@ -20,6 +21,12 @@ export default function Search() {
     });
   }, []);
 
+  const onDelete = (id: number) => {
+    remove(id).then(() => {
+      setEmployees((prev) => prev.filter((e) => e.id !== id));
+    });
+  };
+
   const columns = [
     {
       title: "Name",
@@ -36,7 +43,20 @@ export default function Search() {
     {
       title: "Action",
       render: (_: unknown, record: Employee) => (
-        <a href={`/employees/${record.id}`}>Edit</a>
+        <Space>
+          <Button type="link" href={`/employees/${record.id}`}>
+            Edit
+          </Button>
+
+          <Popconfirm
+            title="Delete employee?"
+            onConfirm={() => onDelete(record.id)}
+          >
+            <Button danger type="link">
+              Delete
+            </Button>
+          </Popconfirm>
+        </Space>
       ),
     },
   ];
